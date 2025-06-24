@@ -16,13 +16,13 @@ pip install -r requirements.txt
 ### 2. Training und Testen starten
 Nach der Installation der Abhängigkeiten kann das Training und Testen des Netzwerks durch Ausführen des folgenden Skripts gestartet werden:
 
-* Für das Fully Connected Netwerk der Aufgabe 1:
+* Für das Fully Connected Netwerk:
 
 ```shell
 python main.py
 ```
 
-* Für das Convolution Netzwerk der Aufgabe 2:
+* Für das Convolution Netzwerk:
 
 ```shell
 python main_2d.py
