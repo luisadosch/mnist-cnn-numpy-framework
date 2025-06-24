@@ -1,0 +1,51 @@
+{
+  "layers": [
+    {
+      "type": "<class 'layer_2D.convolution_layer.Conv2DLayer'>",
+      "in_shape": [28, 28, 1],
+      "out_shape": [26, 26, 4],
+      "kernel_size": [3, 3],
+      "num_filters": 4,
+      "stride": [1, 1]
+    },
+    {
+      "type": "<class 'layer_2D.pooling_2D_layer.Pooling2DLayer'>",
+      "in_shape": [26, 26, 4],
+      "out_shape": [13, 13, 4],
+      "kernel_size": [2, 2],
+      "stride": [2, 2],
+      "pooling_type": "MAX"
+    },
+    {
+      "type": "<class 'layer_2D.convolution_layer.Conv2DLayer'>",
+      "in_shape": [13, 13, 4],
+      "out_shape": [11, 11, 3],
+      "kernel_size": [3, 3],
+      "num_filters": 3,
+      "stride": [1, 1]
+    },
+    {
+      "type": "<class 'layer.flatten.Flatten'>",
+      "in_shape": [11, 11, 3],
+      "out_shape": [363]
+    },
+    {
+      "type": "<class 'layer.fully_connected_layer.FullyConnectedLayer'>",
+      "in_shape": [363],
+      "out_shape": [128]
+    },
+    { "type": "<class 'activations.relu_layer.ActivationsReLULayer'>" },
+    {
+      "type": "<class 'layer.fully_connected_layer.FullyConnectedLayer'>",
+      "in_shape": [128],
+      "out_shape": [32]
+    },
+    { "type": "<class 'activations.relu_layer.ActivationsReLULayer'>" },
+    {
+      "type": "<class 'layer.fully_connected_layer.FullyConnectedLayer'>",
+      "in_shape": [32],
+      "out_shape": [10]
+    },
+    { "type": "<class 'activations.softmax_layer.SoftmaxOutputLayer'>" }
+  ]
+}

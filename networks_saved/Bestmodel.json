@@ -1,0 +1,22 @@
+{
+  "layers": [
+    {
+      "type": "<class 'layer.fully_connected_layer.FullyConnectedLayer'>",
+      "in_shape": [784],
+      "out_shape": [200]
+    },
+    { "type": "<class 'activations.sigmoid_layer.ActivationsSigmoidLayer'>" },
+    {
+      "type": "<class 'layer.fully_connected_layer.FullyConnectedLayer'>",
+      "in_shape": [200],
+      "out_shape": [80]
+    },
+    { "type": "<class 'activations.sigmoid_layer.ActivationsSigmoidLayer'>" },
+    {
+      "type": "<class 'layer.fully_connected_layer.FullyConnectedLayer'>",
+      "in_shape": [80],
+      "out_shape": [10]
+    },
+    { "type": "<class 'activations.softmax_layer.SoftmaxOutputLayer'>" }
+  ]
+}
