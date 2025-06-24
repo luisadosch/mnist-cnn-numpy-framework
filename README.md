@@ -1,4 +1,4 @@
-# DL Framework - Dosch - Esswein - Goebel
+# CNN DL Framework
 
 Dies ist ein einfaches, selbst entwickeltes Deep Learning Framework, das die Verarbeitung des MNIST-Datensatzes mit einem vollständig verbundenen neuronalen Netzwerk demonstriert. 
 
